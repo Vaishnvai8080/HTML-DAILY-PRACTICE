@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .li1{
+            padding-left: 20px;
+        }
+        .li2{
+            padding-left: 20px;
+        }
+        .li3{
+            padding-left: 20px;
+        }
+        .li4{
+            padding-left: 20px;
+        }
+        .li5{
+            padding-left: 20px;
+        }
+        .li6{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body style="background-color: lightblue;">
+    <h2>Registration Form</h2>
+    <p>Enter Your Details Below</p>
+    <form method="post" target="_blank">
+        <div>
+            <ul class="u11">
+                <li class="li1">
+                    <input type="email" required placeholder="Email"
+                    value="Your email@gmail.com" name="email" autofocus/>
+
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="li2">
+                    <input type="password" required placeholder="password" name="password" minlength="8" maxlength="20"/>
+                </li>
+            </ul>
+            <h5>
+                <i>
+                    <p>!Type a complex password with 8-20 characters.</p>
+                </i>
+            </h5>
+        </div>
+        <div>
+            <ul>
+                <li class="li3">
+                    <input type="number" required placeholder="+20 Phone Number" name="Phone Number"/>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <h4>
+            <i>
+                <p>Enter your Profession:</p>
+            </i>
+        </h4>
+        <ul>
+            <li class="li4">
+                <input id="Student" type="radio", name="Profession" value="Student"/>
+                <label for="Student">Student</label>
+                <input id="Teacher" type="radio",name="Profession" value="Teacher"/>
+                <label for="Teacher">Teacher</label>
+                <input id="Developer" type="radio" , name="Profession" value="Developer"/>
+                <label for="Developer" >Developer</label>
+            </li>    
+        </ul>
+        <label for="stage">Choose the stage if you are (student)</label>
+        <select name="stage" id="stage">
+            <optgroup label="Primary Stage">
+                <option value="first primary">first primary</option>
+                <option value="second primary">second primary</option>
+                <option value="third primary">third primary</option>
+                <option value="Fourth primary">Fourth primary</option>
+                <option value="Fifth primary">Fifth primary</option>
+                <option value="sixth primary">sixth primary</option>
+            </optgroup>
+            <optgroup label="Preparatory stage">
+                <option value="first Preparatory">first Preparatory</option>
+                <option value="second Preparatory">second Preparatory</option>
+                <option value="third Preparatory">third Preparatory</option>
+
+            </optgroup>
+            <optgroup label="Secondary stage">
+                <option value="first secondary">first secondary</option>
+                <option value="second secondary">second secondary</option>
+                <option value="third secondary">third secondary</option>
+
+            </optgroup>
+        </select>
+        <hr>
+        <ul>
+            <li class="li5">
+                <label for="d">Enter your Birth date.</label>
+                <input type="date" name="date" id="d"/>
+            </li>
+        </ul>
+        </hr>
+        <input type="submit"/>
+        <input type="reset" value="Reset"/>
+    </form>
+</body>
+</html>
